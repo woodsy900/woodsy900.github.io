@@ -58,10 +58,13 @@ function getmodel(){
 
     function getImage() {
         //let CORS = "https://cors-anywhere.herokuapp.com/";
-        let startStr = "https://keywordimage.com/image.php?q=";
+        //let startStr = "https://keywordimage.com/image.php?q=";
+        let startStr = "https://www.google.com/search?q="
         let vehMake = document.querySelector("#car-makes").value;
+        let space = "%20"
         let vehModel = document.querySelector("#car-models").value;
-        fetch(startStr+vehMake+vehModel)
+        let endStr = "&tbm=isch"
+        fetch(startStr+vehMake+space+vehModel+endStr)
         .then ((response) => response.text())
         .then ((html) => {
             let docResponse = new DOMParser().parseFromString(html, 'text/html');
@@ -71,7 +74,7 @@ function getmodel(){
         /*output = selectElement.value;
         //document.querySelector('.output').textContent = output;
         uselect.textContent = (`${output}`);*/
-        
+
         }
 
 
