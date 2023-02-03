@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Select</title>
+     <!--<link rel="stylesheet" href="main.css">-->
+</head>
+<body onload="getCarMakes()">
+    <div class="main">
+        <h1>Select a make from the list</h1>
+        <form>
+            <select onchange="getmodel()" id="car-makes">
+            </select>
+        </form>
+        <form>
+            <select id="car-models">
+            </select>
+        </form>
+        <button onclick="getImage()">Search</button>
+    </div>
+    <div>
+        <img id="carimg" src="https://m.media-amazon.com/images/I/71+p3lFGhLL._AC_SX679_.jpg" style="width:auto;height:auto;">
+    </div> 
+</body>
+<script src="car.js"></script>
+</html>
