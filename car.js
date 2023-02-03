@@ -71,6 +71,7 @@ function getmodel(){
         /*output = selectElement.value;
         //document.querySelector('.output').textContent = output;
         uselect.textContent = (`${output}`);*/
+        
         }
 
 
